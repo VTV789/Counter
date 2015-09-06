@@ -30,5 +30,10 @@ class ViewController: UIViewController {
         button.setTitleColor(UIColor.blueColor(), forState: .Normal)
         self.view.addSubview(button)
     }
+    // Method with both the count and label properity
+    func incrementCount(){
+        self.count++
+        self.label.text = "\(self.count)"
+    }
 }
 
