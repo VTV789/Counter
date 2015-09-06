@@ -17,6 +17,13 @@ class ViewController: UIViewController {
         label.text = "0"
         
         self.view.addSubview(label)
+        
+        // Button 
+        var button = UIButton()
+        button.frame = CGRectMake(150, 250, 60 , 60)
+        button.setTitle ("Click", forState: .Normal)
+        button.setTitleColor(UIColor.blueColor(), forState: .Normal)
+        self.view.addSubview(button)
     }
 }
 
