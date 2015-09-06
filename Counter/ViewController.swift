@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // Declaring the count and label propority
+    var count = 0
+    var label:UILabel! // ! means an explicitly unwrapped  optional
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         var label = UILabel()
@@ -17,6 +21,7 @@ class ViewController: UIViewController {
         label.text = "0"
         
         self.view.addSubview(label)
+        self.label = label
         
         // Button 
         var button = UIButton()
