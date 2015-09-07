@@ -35,6 +35,10 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="177" y="275" width="46" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="incrementCount" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xnE-0p-tHk"/>
+                                    <action selector="incrementCount:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gLk-Qk-xKN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -53,7 +57,8 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="label" destination="XON-Rc-RLK" id="QfF-vF-q5C"/>
+                        <outlet property="button" destination="2Wy-iR-mRY" id="49g-rH-oqb"/>
+                        <outlet property="label" destination="XON-Rc-RLK" id="L78-En-DeM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

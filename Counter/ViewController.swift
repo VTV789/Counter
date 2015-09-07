@@ -12,13 +12,18 @@ class ViewController: UIViewController {
 
     var count = 0
     @IBOutlet var label:UILabel!
+    @IBOutlet weak var button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
     }
     
-    func incrementCount(){
+    @IBAction func incrementCount(sender: UIButton) {
+    }
+
+ 
+    // incrementCount method
+    @IBAction func incrementCount(){
         self.count++
         self.label.text = "\(self.count)"
     }
